@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio — Destyanto Fatoni Ma'ruf</title>
+  <meta name="description" content="Portofolio cyber-futuristik Destyanto Fatoni Ma'ruf — Mahasiswa Sistem Informasi, Web Developer & Event Organizer.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0f;
+      color: #e0e0ff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: radial-gradient(circle at center, #12122b, #050509);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      border-bottom: 2px solid rgba(0,255,255,0.3);
+      animation: glowPulse 3s infinite alternate;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid cyan;
+      box-shadow: 0 0 25px cyan;
+      margin-bottom: 1rem;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      text-shadow: 0 0 10px cyan;
+    }
+
+    header p {
+      color: #9be8ff;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    nav a {
+      color: cyan;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: -3px;
+      background: cyan;
+      transition: 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a:hover {
+      color: #ff00ff;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 255, 255, 0.3);
+      border-radius: 15px;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      box-shadow: 0 0 15px rgba(0,255,255,0.1);
+      transition: 0.3s;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1.5s forwards;
+    }
+
+    section:hover {
+      box-shadow: 0 0 25px rgba(255, 0, 255, 0.4);
+      transform: scale(1.02);
+    }
+
+    h2 {
+      color: cyan;
+      text-shadow: 0 0 10px cyan;
+      border-bottom: 2px solid rgba(255, 0, 255, 0.4);
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+
+    ul li {
+      padding-left: 1.2rem;
+      position: relative;
+      margin-bottom: 0.6rem;
+    }
+
+    ul li::before {
+      content: "✦";
+      color: #00ffff;
+      position: absolute;
+      left: 0;
+    }
+
+    a {
+      color: cyan;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #ff00ff;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      background: linear-gradient(45deg, #00ffb3, #00bfff);
+      color: #0a0a0f;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 0 15px #00ffff;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .whatsapp-btn:hover {
+      box-shadow: 0 0 25px #00ffea, 0 0 50px #00ffea;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #050509;
+      border-top: 1px solid cyan;
+      color: #9be8ff;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      box-shadow: 0 -5px 15px rgba(0,255,255,0.1);
+    }
+
+    /* Animasi */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes glowPulse {
+      0% { box-shadow: 0 0 20px rgba(0,255,255,0.2); }
+      100% { box-shadow: 0 0 40px rgba(255,0,255,0.3); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Toni.jpg" alt="Foto Destyanto Fatoni Ma'ruf">
+    <h1>Destyanto Fatoni Ma'ruf</h1>
+    <p>Mahasiswa Sistem Informasi — Web Developer & Event Organizer</p>
+    <nav>
+      <a href="#about">Tentang</a>
+	  <a href="#identity">Identitas</a>
+      <a href="#education">Pendidikan</a>
+      <a href="#experience">Pengalaman</a>
+      <a href="#projects">Proyek</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>🧠 Tentang Saya</h2>
+      <p>Saya adalah mahasiswa Sistem Informasi di Universitas Gunadarma yang tertarik dengan dunia web development, UI/UX, dan konsep cyber system. Saya suka menggabungkan desain futuristik dengan logika sistem untuk menciptakan tampilan digital yang menarik dan efisien.</p>
+	
+	<section id="identity">
+      <h2>🪪Identitas</h2>
+      <p><strong>Nama:</strong> Destyanto Fatoni Ma'ruf</p>
+      <p><strong>Tempat/Tanggal Lahir:</strong> Gunungkidul, 31 Desember 2004</p>
+      <p><strong>Alamat:</strong> Kedungpoh, Nglipar, Gunungkidul, Yogyakarta</p>
+      <p><strong>Jenis Kelamin:</strong> Laki-Laki</p>
+      <p><strong>Agama:</strong> Islam</p>
+      <p><strong>Kewarganegaraan:</strong> Indonesia</p>
+    </section>
+
+    <section id="education">
+      <h2>📘 Pendidikan</h2>
+      <ul>
+        <li>SD Gajasari (2011–2017)</li>
+        <li>SMPN 1 Nglipar (2017–2020)</li>
+        <li>SMAN 1 Wonosari (2020–2023)</li>
+        <li>Universitas Gunadarma — S1 Sistem Informasi (2023–Sekarang)</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>🧩 Pengalaman</h2>
+      <ul>
+        <li><strong>Event Organizer (EO):</strong> Koordinasi vendor, rundown, dan pelaksanaan acara.</li>
+        <li><strong>Freelance:</strong> Runner, support, admin, dan pembuatan konten travel.</li>
+        <li><strong>Magang:</strong> PT. Raindra Laju Barakah & PT. Kala Putra Bakti.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>💻 Proyek</h2>
+      <ul>
+        <li><strong>Website Portofolio Pribadi:</strong> Desain responsif dengan tema cyberpunk.</li>
+        <li><strong>Aplikasi Kasir Sederhana:</strong> Sistem web simulasi laporan stok & transaksi.</li>
+        <li><strong>Event Management:</strong> Sistem dokumentasi dan perencanaan acara.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>📱 Kontak</h2>
+      <p><strong>Nomor HP:</strong> <a href="tel:+6281548680459">0815-4868-0459</a></p>
+      <p><strong>Email:</strong> <a href="mailto:destyanto34@gmail.com">destyanto34@gmail.com</a></p>
+      <p><strong>Chat WhatsApp:</strong></p>
+      <a class="whatsapp-btn" href="https://wa.me/6281548680459?text=Halo%20Destyanto,%20saya%20tertarik%20dengan%20portofoliomu!" target="_blank">💬 Chat via WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Destyanto Fatoni Ma'ruf — Portofolio Cyber Edition ⚡</p>
+  </footer>
+</body>
+</html>
